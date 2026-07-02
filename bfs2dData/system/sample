@@ -1,0 +1,98 @@
+// -*- C++ -*-
+
+type            sets;
+libs            (sampling);
+
+writeControl    onEnd;
+
+interpolationScheme cellPoint;
+
+setFormat       raw;
+
+fields          (p U);
+
+sets
+{
+    Uref
+    {
+        type    cloud;
+        axis    y;
+        points  ((-0.0508 0.0508 0.01));
+    }
+
+    x_by_h_m04
+    {
+        type    face;
+        axis    y;
+        start   (-0.0508 -0.0127 0);
+        end     (-0.0508 0.1016 0);
+        nPoints 200;
+    }
+    x_by_h_01
+    {
+        type    face;
+        axis    y;
+        start   (0.0127 -0.0127 0);
+        end     (0.0127 0.1016 0);
+        nPoints 200;
+    }
+    x_by_h_39
+    {
+        type    face;
+        axis    y;
+        start   (0.04953 -0.0127 0);
+        end     (0.04953 0.1016 0);
+        nPoints 200;
+    }
+    x_by_h_04
+    {
+        type    face;
+        axis    y;
+        start   (0.0508 -0.0127 0);
+        end     (0.0508 0.1016 0);
+        nPoints 200;
+    }
+    x_by_h_41
+    {
+        type    face;
+        axis    y;
+        start   (0.0520699 -0.0127 0);
+        end     (0.0520699 0.1016 0);
+        nPoints 200;
+    }
+    x_by_h_59
+    {
+        type    face;
+        axis    y;
+        start   (0.07493 -0.0127 0);
+        end     (0.07493 0.1016 0);
+        nPoints 200;
+    }
+    x_by_h_06
+    {
+        type    face;
+        axis    y;
+        start   (0.0762 -0.0127 0);
+        end     (0.0762 0.1016 0);
+        nPoints 200;
+    }
+    x_by_h_61
+    {
+        type    face;
+        axis    y;
+        start   (0.07747 -0.0127 0);
+        end     (0.07747  0.1016 0);
+        nPoints 200;
+    }
+    x_by_h_10
+    {
+        type    face;
+        axis    y;
+        start   (0.127 -0.0127 0);
+        end     (0.127 0.1016 0);
+        nPoints 200;
+    }
+}
+
+
+// ************************************************************************* //
