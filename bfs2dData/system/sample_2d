@@ -20,7 +20,7 @@ libs ("libsampling.so");
 
 interpolationScheme cellPoint;
 
-setFormat raw;
+setFormat csv;
 
 fields
 (
@@ -34,6 +34,6 @@ sets
     {
         type cloud;
         axis xyz;
-        points #include "./gridPoints.xyz";
+        points #include "../gridPoints_driver_seegmiller.xyz";
     }
 );

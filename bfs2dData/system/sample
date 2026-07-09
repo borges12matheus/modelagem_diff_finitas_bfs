@@ -1,98 +1,146 @@
 // -*- C++ -*-
 
 type            sets;
-libs            (sampling);
+libs            ("libsampling.so");
 
 writeControl    onEnd;
 
 interpolationScheme cellPoint;
 
-setFormat       raw;
+setFormat       csv;
 
-fields          (p U);
+fields
+(
+    p
+    U
+);
 
 sets
-{
+(
     Uref
     {
         type    cloud;
-        axis    y;
-        points  ((-0.0508 0.0508 0.01));
+        axis    xyz;
+        points
+        (
+            (-0.0508 0.0508 0)
+        );
     }
 
-    x_by_h_m04
+    x_by_h_m4
     {
         type    face;
         axis    y;
-        start   (-0.0508 -0.0127 0);
-        end     (-0.0508 0.1016 0);
-        nPoints 200;
+        start   (-0.0508 0.0 0);
+        end     (-0.0508 0.1143 0);
+        nPoints 250;
     }
-    x_by_h_01
+
+    x_by_h_1
     {
         type    face;
         axis    y;
-        start   (0.0127 -0.0127 0);
-        end     (0.0127 0.1016 0);
-        nPoints 200;
+        start   (0.0127 0.0 0);
+        end     (0.0127 0.1143 0);
+        nPoints 250;
     }
-    x_by_h_39
+
+    x_by_h_2
     {
         type    face;
         axis    y;
-        start   (0.04953 -0.0127 0);
-        end     (0.04953 0.1016 0);
-        nPoints 200;
+        start   (0.0254 0.0 0);
+        end     (0.0254 0.1143 0);
+        nPoints 250;
     }
-    x_by_h_04
+
+    x_by_h_4
     {
         type    face;
         axis    y;
-        start   (0.0508 -0.0127 0);
-        end     (0.0508 0.1016 0);
-        nPoints 200;
+        start   (0.0508 0.0 0);
+        end     (0.0508 0.1143 0);
+        nPoints 250;
     }
-    x_by_h_41
+
+    x_by_h_6
     {
         type    face;
         axis    y;
-        start   (0.0520699 -0.0127 0);
-        end     (0.0520699 0.1016 0);
-        nPoints 200;
+        start   (0.0762 0.0 0);
+        end     (0.0762 0.1143 0);
+        nPoints 250;
     }
-    x_by_h_59
+
+    x_by_h_8
     {
         type    face;
         axis    y;
-        start   (0.07493 -0.0127 0);
-        end     (0.07493 0.1016 0);
-        nPoints 200;
+        start   (0.1016 0.0 0);
+        end     (0.1016 0.1143 0);
+        nPoints 250;
     }
-    x_by_h_06
-    {
-        type    face;
-        axis    y;
-        start   (0.0762 -0.0127 0);
-        end     (0.0762 0.1016 0);
-        nPoints 200;
-    }
-    x_by_h_61
-    {
-        type    face;
-        axis    y;
-        start   (0.07747 -0.0127 0);
-        end     (0.07747  0.1016 0);
-        nPoints 200;
-    }
+
     x_by_h_10
     {
         type    face;
         axis    y;
-        start   (0.127 -0.0127 0);
-        end     (0.127 0.1016 0);
-        nPoints 200;
+        start   (0.1270 0.0 0);
+        end     (0.1270 0.1143 0);
+        nPoints 250;
     }
-}
 
+    x_by_h_12
+    {
+        type    face;
+        axis    y;
+        start   (0.1524 0.0 0);
+        end     (0.1524 0.1143 0);
+        nPoints 250;
+    }
 
-// ************************************************************************* //
+    x_by_h_15
+    {
+        type    face;
+        axis    y;
+        start   (0.1905 0.0 0);
+        end     (0.1905 0.1143 0);
+        nPoints 250;
+    }
+
+    x_by_h_20
+    {
+        type    face;
+        axis    y;
+        start   (0.2540 0.0 0);
+        end     (0.2540 0.1143 0);
+        nPoints 250;
+    }
+
+    x_by_h_25
+    {
+        type    face;
+        axis    y;
+        start   (0.3175 0.0 0);
+        end     (0.3175 0.1143 0);
+        nPoints 250;
+    }
+
+    x_by_h_30
+    {
+        type    face;
+        axis    y;
+        start   (0.3810 0.0 0);
+        end     (0.3810 0.1143 0);
+        nPoints 250;
+    }
+
+    x_by_h_40
+    {
+        type    face;
+        axis    y;
+        start   (0.5080 0.0 0);
+        end     (0.5080 0.1143 0);
+        nPoints 250;
+    }
+);
