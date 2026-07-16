@@ -8,10 +8,10 @@
 Build  : _f917e866-20250814 OPENFOAM=2506 patch=250814 version=2506
 Arch   : "LSB;label=32;scalar=64"
 Exec   : blockMesh
-Date   : Jul 06 2026
-Time   : 22:51:58
+Date   : Jul 16 2026
+Time   : 16:00:24
 Host   : matheus-PCH-B550M-CR
-PID    : 238203
+PID    : 152264
 I/O    : uncollated
 Case   : /home/matheus/Documentos/Mestrado/modelagem_computacional/bfsDifFinitas/bfs2dData
 nProcs : 1
